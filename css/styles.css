@@ -17,8 +17,9 @@ body{
 
 ul{
     list-style: none;
-    display: flex;
-    justify-content: center;
+   
+    margin: 0;
+    padding: 0;
 }
 .container{
 
@@ -31,8 +32,11 @@ ul{
 .logo-h{
     color: #212121;
     font-family: 'Raleway', sans-serif;
-    margin-left: 215px;
+    
 
+}
+.head{
+    display: flex;
 }
 .header{
     display: flex;
@@ -56,10 +60,13 @@ ul{
     margin-left: 93px;
     margin-top: 0;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 .contacts{
-    margin-left: auto;
-    margin-right: 215px;
+    padding-left: 330px;
+    align-items: center;
+    justify-content: center;
 }
 .site-nav,
 .contacts{
@@ -118,9 +125,9 @@ flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    margin-right:-30px ;
     padding: 0;
-    margin: 0 -30px 0 0;
+    
      
 }
 .article-title{
@@ -146,6 +153,10 @@ flex-direction: row;
 .work-img{
     margin-top: 90px;
     margin-bottom: 90px;
+}
+.images{
+    display: flex;
+    justify-content: center;
 }
 .image{
     margin-right: 30px;
@@ -174,7 +185,12 @@ flex-direction: row;
 .people{
     background-color: #F5F4FA;
 }
-
+.people-list{
+    display: flex;
+    justify-content: center;
+    margin-right: -30px;
+   
+}
 .person{
     font-size: 16px;
     line-height: 1.18;
@@ -191,7 +207,8 @@ flex-direction: row;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.1;
-    margin-bottom: 10px;
+    
+    margin: 0 0 10px 0;
    
 }
 .person-box{
@@ -202,6 +219,7 @@ flex-direction: row;
 
 .position {
     color:var(--second-text-color) ;
+    padding: 0;
 }
 
 .tagline{
@@ -265,8 +283,11 @@ flex-direction: row;
 }
 .bottom-nav{
     display: block;
+    
+    justify-content: center;
    
 }
+
 .bottom-nav.li:not(:last-child){
     margin-bottom: 9px;
 
@@ -276,7 +297,7 @@ flex-direction: row;
 .logo-f{
     color: #FFFFFF;
     margin-bottom: 20px;
-    
+
     }
 
 .logo-h, .logo-f{
@@ -314,9 +335,14 @@ flex-direction: row;
     flex-direction: row;
     justify-content: center;
     row-gap: 8px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
-
+.button-item {
+  margin-left: 8px;
+}
+.button-item :first-child {
+ margin-left: 0;
+}
 .button{
    
     color: var(--main-text-color);
@@ -329,7 +355,7 @@ flex-direction: row;
     text-align: center;
     font-family: 'Roboto';
     letter-spacing: 0.03em;
-    margin-left: 8px;
+    
     background: #F5F4FA;
     border-radius: 4px;
     padding-left: 22px;
@@ -368,7 +394,7 @@ flex-direction: row;
     
 }
 .project-box{
-    padding: 20px;
+    padding: 20px 24px 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
@@ -388,4 +414,8 @@ flex-direction: row;
     line-height: 2;
     margin-bottom: 4px;
     margin-top: 0;
+}
+.img{
+    display: block;
+    max-width: 100%;
 }
