@@ -37,6 +37,7 @@ ul{
 }
 .head{
     display: flex;
+    border-bottom: 1px solid #ECECEC;
 }
 .header{
     display: flex;
@@ -64,7 +65,7 @@ ul{
     justify-content: center;
 }
 .contacts{
-    padding-left: 330px;
+    margin-left: auto;
     align-items: center;
     justify-content: center;
 }
@@ -76,11 +77,16 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 display: flex;
 flex-direction: row;
-
 }
-.site-nav-item{
+ .site-nav li:not(:last-child) {
+     margin-right: 30px;
+ }
+ .contacts li:not(:last-child) {
+     margin-right: 30px;
+ }
+/*.site-nav-item{
     margin-right: 50px;
-}
+}*/
 .site-nav .site-nav-item:last-child{
     margin-right: 0;
 }
@@ -151,8 +157,8 @@ flex-direction: row;
     padding-top: 0;
 }
 .work-img{
-    margin-top: 90px;
-    margin-bottom: 90px;
+    display: block;
+    max-width:100%;
 }
 .images{
     display: flex;
@@ -220,6 +226,7 @@ flex-direction: row;
 .position {
     color:var(--second-text-color) ;
     padding: 0;
+    margin: 0;
 }
 
 .tagline{
@@ -283,20 +290,22 @@ flex-direction: row;
 }
 .bottom-nav{
     display: block;
-    
     justify-content: center;
-   
+}
+.bottom-nav.li{
+    margin-bottom: 9px;
 }
 
-.bottom-nav.li:not(:last-child){
+/*.bottom-nav.li:not(:last-child){
     margin-bottom: 9px;
 
-}
+}*/
 
 
 .logo-f{
     color: #FFFFFF;
     margin-bottom: 20px;
+    display: inline-block;
 
     }
 
@@ -314,6 +323,7 @@ flex-direction: row;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 .contscts-link-f{
     color: rgba(255, 255, 255, 0.6);
@@ -323,6 +333,7 @@ flex-direction: row;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    margin-bottom: 9px;
 }
 
 .contscts-link-f:hover,
@@ -337,11 +348,17 @@ flex-direction: row;
     row-gap: 8px;
     margin-bottom: 50px;
 }
+.button-item li:not(:first-child) {
+    margin-left: 8px;
+}
 .button-item {
   margin-left: 8px;
 }
 .button-item :first-child {
  margin-left: 0;
+}
+.button-item:not(:first-child) {
+    margin-left: 8px;
 }
 .button{
    
